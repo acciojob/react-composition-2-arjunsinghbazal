@@ -3,11 +3,11 @@ import React from "react";
 
 const New = ({ value, current }) => {
   return (
-    current ? (<div onClick={value}>
-      <div className="modal-overlay">
+    current ? (
+      <div className="modal-overlay" onClick={value}>
         <button className="modal-close" onClick={value}>Close</button>
-        <p className="modal">This is the content of the modal.</p>
-      </div></div>
+        <p>This is the content of the modal.</p>
+      </div>
     ) : null
   );
 }
