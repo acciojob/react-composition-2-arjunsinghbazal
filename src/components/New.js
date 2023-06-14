@@ -6,7 +6,7 @@ const New = ({ value, current }) => {
     current ? (<div onClick={value}>
       <div className="modal-overlay">
         <button className="modal-close" onClick={value}>Close</button>
-        <p>This is the content of the modal.</p>
+        <p className="modal">This is the content of the modal.</p>
       </div></div>
     ) : null
   );
